@@ -1,0 +1,71 @@
+.homecard_desc_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.homecard-name {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 0%;
+  font-family: sans-serif;
+}
+
+.homecard-name > a {
+  color: #888787;
+  text-transform: uppercase;
+}
+
+.homecard_manageActions {
+  position: absolute;
+  left: 8%;
+  top: 5%;
+  transform: scale(1.5);
+}
+
+.heart-outline {
+  display: block;
+  width: 15px;
+  height: 15px;
+  /* background-color: black; */
+  background-image: url("../../public/images/likeImg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.heart-outline:hover {
+  display: block;
+  width: 15px;
+  height: 15px;
+  /* background-color: black; */
+  background-image: url("../../public/images/heart-fill.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.veiwAllbtn {
+  background: black;
+  width: 200px;
+  padding: 10px 60px;
+  color: #fff;
+  border-radius: 7px;
+  text-align: center;
+  margin-inline: auto;
+  text-transform: uppercase;
+}
+
+.veiwAllbtn a {
+  color: white !important;
+}
+
+.service-item svg {
+  margin-block: 1rem;
+  transform: scale(2);
+}
+
+@media (max-width: 600px) {
+  .product-item_home {
+    width: 50% !important;
+  }
+}

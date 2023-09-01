@@ -1,0 +1,71 @@
+.heroImgDiv {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.heroImgDiv > img {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0),#0009);
+}
+
+.scroll {
+  margin-top: 4vw;
+  font-size: 1.25vw;
+  position: absolute;
+  color: #fff;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* animation: unblock 6s; */
+  bottom: 4.3vw;
+}
+
+.scroll_down {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2vw;
+  height: 3vw;
+  border: 0.05vw solid #ffffff;
+  border-radius: 1vw;
+  opacity: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 0.5%;
+  overflow: hidden;
+}
+
+@keyframes unblock {
+  0% {
+    transform: translateY(-10%); /* Starting position above the viewport */
+  }
+  100% {
+    transform: translateY(100%); /* Ending position below the viewport */
+  }
+}
+
+.scroll_down h3 {
+  font-size: 2.5vw;
+  color: #fff;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: unblock;
+}
+
+@media (max-width: 600px) {
+  .heroImgDiv {
+    display: none;
+  }
+  .heroImgDiv > img {
+    display: none;
+  }
+}
